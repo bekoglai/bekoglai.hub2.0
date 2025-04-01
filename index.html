@@ -4,46 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eaeaea;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        h1 {
-            color: #222;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-        }
-        .post {
-            padding: 20px;
-            margin-top: 20px;
-            background: #f9f9f9;
-            border-left: 5px solid #007bff;
-            border-radius: 8px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-            line-height: 1.6;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение внешнего CSS -->
 </head>
 <body>
     <div class="container">
@@ -53,6 +14,13 @@
             <h2>Буду изучать C# и Java</h2>
             <p>Скоро начну изучать C# и Java, чтобы создавать мощные приложения и игры. Это поможет мне развить навыки программирования и работать с более сложными проектами.</p>
         </div>
+
+        <!-- Кнопка с эмодзи -->
+        <div class="robux-button">
+            <button onclick="rickroll()">💸 Бесплатные робуксы! 🎮</button>
+        </div>
     </div>
+
+    <script src="script.js"></script> <!-- Подключаем внешний JavaScript -->
 </body>
 </html>
