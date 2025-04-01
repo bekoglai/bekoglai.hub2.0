@@ -4,56 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключение внешнего CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(145deg, #f7f7f7, #e2e2e2);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.8rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            color: #2980b9;
+            font-size: 1.8rem;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .post {
+            padding: 25px;
+            margin-top: 30px;
+            background: #ecf0f1;
+            border-left: 6px solid #3498db;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .post h2 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            color: #666;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Мобильная версия */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Обо мне</h1>
-        
+
         <div class="post">
             <h2>Буду изучать C# и Java</h2>
             <p>Скоро начну изучать C# и Java, чтобы создавать мощные приложения и игры. Это поможет мне развить навыки программирования и работать с более сложными проектами.</p>
-        </div>
-
-        <!-- Кнопка с эмодзи -->
-        <div class="robux-button">
-            <button onclick="rickroll()">💸 Бесплатные робуксы! 🎮</button>
+            <a href="#" class="button">Следите за обновлениями!</a>
         </div>
     </div>
-
-    <script src="script.js"></script> <!-- Подключаем внешний JavaScript -->
 </body>
 </html>
-<div class="secret-button">
-    <button onclick="unlockSecret()">🔒 Секретный доступ</button>
-</div>
-<div id="secret-message" class="hidden">
-    <p>🎉 Секретный доступ получен! Ваша жизнь больше не будет прежней! 🚀</p>
-</div>
-<div class="magic-button">
-    <button onclick="showMagic()">✨ Жми, чтобы увидеть магию! ✨</button>
-</div>
-<div id="magic-message" class="hidden">
-    <p>🎩 Ого! Ты активировал магию! 💫</p>
-</div>
-<div class="game-button">
-    <button onclick="startGame()">🎮 Хочешь поиграть в игру? 🎮</button>
-</div>
-<div class="charge-button">
-    <button>⚡ Зарядись энергией! 🔋</button>
-</div>
-<div id="pet-container">
-    <img id="pet" src="https://example.com/pet.png" alt="Pet" />
-</div>
-<div class="teleport-button">
-    <button onclick="teleport()">🔮 Телепорт!</button>
-</div>
-<div class="sound-button">
-    <button onclick="playSound()">🔊 Нажми для звука!</button>
-</div>
-<div class="blinking-button">
-    <button>🖱️ Нажми меня, я мигаю!</button>
-</div>
-<div class="magnetic-button">
-    <button>🧲 Я двигаюсь за твоим курсором!</button>
-</div>
