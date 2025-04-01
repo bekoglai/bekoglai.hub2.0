@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Блог</title>
+    <title>Обо мне</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #eaeaea;
             margin: 0;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             max-width: 800px;
-            margin: 20px auto;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .post {
-            padding: 15px;
-            margin-bottom: 15px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         h1 {
-            color: #333;
+            color: #222;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        .post {
+            padding: 20px;
+            margin-top: 20px;
+            background: #f9f9f9;
+            border-left: 5px solid #007bff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #444;
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Мои Посты</h1>
+        <h1>Обо мне</h1>
         
         <div class="post">
             <h2>Буду изучать C# и Java</h2>
-            <p>Скоро начну изучать C# и Java, чтобы создавать мощные приложения и игры! Это будет круто! 😎</p>
+            <p>Скоро начну изучать C# и Java, чтобы создавать мощные приложения и игры. Это поможет мне развить навыки программирования и работать с более сложными проектами.</p>
         </div>
     </div>
 </body>
